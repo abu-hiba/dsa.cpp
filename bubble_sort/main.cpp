@@ -3,7 +3,6 @@
 #include <ostream>
 
 void bubbleSort(int arr[], int size) {
-    int endIndex = size - 1;
     bool swapped = true;
 
     for (int i = 0; i < size - 1; i++) {
