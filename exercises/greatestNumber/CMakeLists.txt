@@ -5,4 +5,4 @@ project(
     LANGUAGES CXX
 )
 
-add_executable(GreatestNumber main.cpp)
+add_executable(GreatestNumber solution.cpp)

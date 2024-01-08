@@ -1,21 +1,15 @@
 #include <iostream>
 
 int greatestNumber(int arr[], int size) {
+    int greatestValue = arr[0];
+
     for (int i = 0; i < size; i++) {
-        bool isIValTheGreatest = true;
-
-        for (int j = 0; j < size; j++) {
-            if (arr[j] > arr[i]) {
-                isIValTheGreatest = false;
-            }
-        }
-
-        if (isIValTheGreatest) {
-            return arr[i];
+        if (arr[i] > greatestValue) {
+            greatestValue = arr[i];
         }
     }
-    // shouldn't be reached
-    return 0;
+
+    return greatestValue;
 }
 
 int main(int argc, char* argv[]) {
