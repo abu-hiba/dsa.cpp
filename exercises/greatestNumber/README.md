@@ -1,4 +1,4 @@
-Chapter 4 Exercise 4 (pg. 61)
+## Chapter 4 Exercise 4 (pg. 61)
 The following function finds the greatest single number within an array, but has an efficieny of $O(N^2)$. Rewrite the function so that it becomes a speedy O(N):
 
 ```cpp
