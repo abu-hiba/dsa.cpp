@@ -2,15 +2,12 @@
 #include <string>
 
 bool containsX(std::string str) {
-    bool foundX = false;
-
     for (int i = 0; i < str.length(); i++) {
         if (str[i] == 'X') {
-            foundX = true;
+            return true;
         }
     }
-
-    return foundX;
+    return false;
 }
 
 int main(int argc, char* argv[]) {
