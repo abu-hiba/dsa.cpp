@@ -10,9 +10,11 @@ bool containsX(std::string str) {
     return false;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     if (argc != 2) {
-        std::printf("Specify a single string to search e.g.:\n\n %s eXample\nor\n %s \"example string\"\n", argv[0], argv[0]);
+        std::printf("Specify a single string to search e.g.:\n\n %s "
+                    "eXample\nor\n %s \"example string\"\n",
+                    argv[0], argv[0]);
         return 1;
     }
 
@@ -28,4 +30,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-

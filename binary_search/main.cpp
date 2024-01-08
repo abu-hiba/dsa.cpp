@@ -38,9 +38,10 @@ void printArray(int arr[], int size) {
     }
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     if (argc < 2) {
-        std::printf("Specify a list of integers e.g.:\n\n %s 8 3 5 20 1\n", argv[0]);
+        std::printf("Specify a list of integers e.g.:\n\n %s 8 3 5 20 1\n",
+                    argv[0]);
         return 1;
     }
 
@@ -69,4 +70,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
