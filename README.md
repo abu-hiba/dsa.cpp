@@ -8,7 +8,8 @@ The examples used in the book are written in JavaScript, Python and Ruby. I've c
 here to try and progress my C++ skills.
 
 In the `/exercises` directory I've written my solutions to the coding exercises from the book.
-Each sub-directory contains one solution and a README that contains the question.
+Each sub-directory contains one solution and a README that contains the question. For any exercises that
+ask you to modify some given code, I have converted that code to C++ and included it in the README.
 
 ### Build and run each example/solution
 
