@@ -5,24 +5,14 @@
 #include <vector>
 
 std::vector<int> intersection(std::vector<int> vec1, std::vector<int> vec2) {
-    std::vector<int> smallerVector;
-    std::vector<int> largerVector;
     std::map<int, bool> map;
     std::vector<int> vecIntersection;
 
-    if (vec1.size() > vec2.size()) {
-        smallerVector = vec2;
-        largerVector = vec1;
-    } else {
-        smallerVector = vec1;
-        largerVector = vec2;
-    }
-
-    for (int value : smallerVector) {
+    for (int value : vec1) {
         map[value] = true;
     }
 
-    for (int value : largerVector) {
+    for (int value : vec2) {
         if (map[value]) {
             vecIntersection.push_back(value);
         }
