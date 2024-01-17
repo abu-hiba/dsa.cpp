@@ -51,8 +51,7 @@ int main(int argc, char *argv[]) {
     std::cout << std::endl;
 
     std::vector<int> vector2 =
-        readVector("Enter a second list of integers followed by any "
-                   "non-integer character e.g.: \n0 2 4 6 8;");
+        readVector("Enter a second list of integers");
 
     std::vector<int> result = vectorIntersection(vector1, vector2);
     std::cout << std::endl << "Intersection:" << std::endl;
