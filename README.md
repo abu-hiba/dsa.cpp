@@ -2,7 +2,7 @@
 
 DSA fun with C++
 
-In the root directory there are directories for common algorithms explained in the book
+In the `/examples` directory there are directories for common algorithms explained in the book
 [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/).
 The examples used in the book are written in JavaScript, Python and Ruby. I've converted them to C++
 here to try and progress my C++ skills.
@@ -11,7 +11,7 @@ In the `/exercises` directory I've written my solutions to the coding exercises 
 Each sub-directory contains one solution and a README that contains the question. For any exercises that
 ask you to modify some given code, I have converted that code to C++ and included it in the README.
 
-### Build and run each example/solution
+### Build and run each example/exercise solution
 
 Navigate into the example/exercise directory e.g.
 ```shell
