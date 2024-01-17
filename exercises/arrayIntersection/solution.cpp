@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
-std::vector<int> intersection(std::vector<int> vec1, std::vector<int> vec2) {
+std::vector<int> vectorIntersection(std::vector<int> vec1, std::vector<int> vec2) {
     std::map<int, bool> map;
-    std::vector<int> vecIntersection;
+    std::vector<int> intersection;
 
     for (int value : vec1) {
         map[value] = true;
@@ -14,11 +14,11 @@ std::vector<int> intersection(std::vector<int> vec1, std::vector<int> vec2) {
 
     for (int value : vec2) {
         if (map[value]) {
-            vecIntersection.push_back(value);
+            intersection.push_back(value);
         }
     }
 
-    return vecIntersection;
+    return intersection;
 }
 
 void printVector(std::vector<int> vec) {
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
         readVector("Enter a second list of integers followed by any "
                    "non-integer character e.g.: \n0 2 4 6 8;");
 
-    std::vector<int> result = intersection(vector1, vector2);
+    std::vector<int> result = vectorIntersection(vector1, vector2);
     std::cout << std::endl << "Intersection:" << std::endl;
     printVector(result);
 
