@@ -10,7 +10,7 @@ std::string findDuplicate(std::vector<std::string> strings) {
         if (map[s]) {
             return s;
         } else {
-            map[s] = true; 
+            map[s] = true;
         }
     }
 
@@ -19,8 +19,9 @@ std::string findDuplicate(std::vector<std::string> strings) {
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        std::printf("Specify a list of strings e.g.:\n\n %s abc def ghi def jkl\n",
-                    argv[0]);
+        std::printf(
+            "Specify a list of strings e.g.:\n\n %s abc def ghi def jkl\n",
+            argv[0]);
         return 1;
     }
 
