@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     int size = argc - 1;
     std::vector<std::string> strings;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 1; i < size + 1; i++) {
         strings.push_back(argv[i]);
     }
 
