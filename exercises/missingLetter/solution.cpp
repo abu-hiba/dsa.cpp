@@ -10,7 +10,7 @@ char missingLetter(std::string str) {
     }
 
     for (char l = 'a'; l <= 'z'; l++) {
-        if (testChars[l] != true) {
+        if (!testChars[l]) {
             return l;
         }
     }
