@@ -2,12 +2,15 @@
 
 DSA fun with C++
 
-In the `/examples` directory there are directories for common algorithms explained in the book
+In the root directory, there is a directory for each data structure I have covered. Each of these directories follows
+the structure described below.
+
+In the `/examples` directory for each data structure there are directories for common algorithms explained in the book
 [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/).
 The examples used in the book are written in JavaScript, Python and Ruby. I've converted them to C++
 here to try and progress my C++ skills.
 
-In the `/exercises` directory I've written my solutions to the coding exercises from the book.
+In the `/exercises` directory I've written my solutions to the coding exercises from the book for each data structure.
 Each sub-directory contains one solution and a README that contains the question. For any exercises that
 ask you to modify some given code, I have converted that code to C++ and included it in the README.
 
@@ -15,7 +18,7 @@ ask you to modify some given code, I have converted that code to C++ and include
 
 Navigate into the example/exercise directory e.g.
 ```shell
-cd examples/bubble_sort
+cd arrays_and_strings/examples/bubble_sort
 ```
 
 Build
