@@ -15,7 +15,7 @@ char missingLetter(std::string str) {
         }
     }
 
-    return '_';
+    return ' ';
 }
 
 int main(int argc, char *argv[]) {
