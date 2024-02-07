@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 
+#include "utils/printvector.hpp"
+
 std::vector<int> vectorIntersection(std::vector<int> vec1, std::vector<int> vec2) {
     std::map<int, bool> map;
     std::vector<int> intersection;
@@ -19,13 +21,6 @@ std::vector<int> vectorIntersection(std::vector<int> vec1, std::vector<int> vec2
     }
 
     return intersection;
-}
-
-void printVector(std::vector<int> vec) {
-    for (int value : vec) {
-        std::cout << value << " ";
-    }
-    std::cout << std::endl;
 }
 
 std::vector<int> readVector(std::string message) {
@@ -55,7 +50,7 @@ int main(int argc, char *argv[]) {
 
     std::vector<int> result = vectorIntersection(vector1, vector2);
     std::cout << std::endl << "Intersection:" << std::endl;
-    printVector(result);
+    printVector<int>(result);
 
     return 0;
 }
