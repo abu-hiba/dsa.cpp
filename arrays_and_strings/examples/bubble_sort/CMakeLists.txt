@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 
-project(
-    BubbleSortCPP
-    LANGUAGES CXX
-)
+project(BubbleSortCPP LANGUAGES CXX)
 
-add_executable(BubbleSort main.cpp)
+include_directories(../../../include/)
+
+add_executable(BubbleSort main.cpp ../../../include/utils/printarray.hpp)

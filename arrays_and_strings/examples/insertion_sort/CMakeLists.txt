@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 
-project(
-    InsertionSortCPP
-    LANGUAGES CXX
-)
+project(InsertionSortCPP LANGUAGES CXX)
 
-add_executable(InsertionSort main.cpp)
+include_directories(../../../include/)
+
+add_executable(InsertionSort main.cpp ../../../include/utils/printarray.hpp)
