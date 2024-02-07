@@ -3,8 +3,7 @@
 
 #include <iostream>
 
-template <typename T>
-void printArray(T arr[], int size) {
+template <typename T> void printArray(T arr[], int size) {
     for (int i = 0; i < size; i++) {
         if (i == size - 1) {
             std::cout << arr[i] << std::endl;

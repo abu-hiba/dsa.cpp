@@ -4,8 +4,7 @@
 #include <iostream>
 #include <vector>
 
-template <typename T>
-void printVector(std::vector<T> vec) {
+template <typename T> void printVector(std::vector<T> vec) {
     for (T value : vec) {
         std::cout << value << " ";
     }

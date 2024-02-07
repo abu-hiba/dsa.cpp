@@ -1,8 +1,9 @@
 #include <iostream>
 #include <limits>
 #include <map>
-#include <string>
 #include <vector>
+
+#include "utils/readvector.hpp"
 
 bool isSubset(std::vector<int> vec1, std::vector<int> vec2) {
     std::vector<int> largerVec;
@@ -35,30 +36,17 @@ bool isSubset(std::vector<int> vec1, std::vector<int> vec2) {
     return true;
 }
 
-std::vector<int> readVector(std::string message) {
-    int input;
-    std::vector<int> inputVector;
-
-    std::cout << message << std::endl;
-
-    while (std::cin >> input) {
-        inputVector.push_back(input);
-    }
-
-    return inputVector;
-}
-
 int main(int argc, char *argv[]) {
     std::vector<int> vector1 =
-        readVector("Enter a list of integers followed by any non-integer "
-                   "character e.g.: \n1 2 3 4 5;");
+        readVector<int>("Enter a list of integers followed by any non-integer "
+                        "character e.g.: \n1 2 3 4 5;");
 
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << std::endl;
 
     std::vector<int> vector2 =
-        readVector("Enter a second list of integers");
+        readVector<int>("Enter a second list of integers");
 
     bool result = isSubset(vector1, vector2);
     if (result == 0) {
