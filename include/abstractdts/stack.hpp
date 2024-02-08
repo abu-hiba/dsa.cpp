@@ -2,6 +2,7 @@
 #define STACK_H
 
 #include <vector>
+
 template <typename T> class Stack {
     std::vector<T> data = {};
 

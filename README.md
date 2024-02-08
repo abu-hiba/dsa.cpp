@@ -23,7 +23,7 @@ cd arrays_and_strings/examples/bubble_sort
 
 Configure
 ```sh
-cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
+cmake -S . -B build
 ```
 
 Build

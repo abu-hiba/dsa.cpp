@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(../../../include/)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_executable(
   ArrayIntersection solution.cpp ../../../include/utils/printvector.hpp
                     ../../../include/utils/readvector.hpp)
