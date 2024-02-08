@@ -17,24 +17,28 @@ ask you to modify some given code, I have converted that code to C++ and include
 ### Build and run each example/exercise solution
 
 Navigate into the example/exercise directory e.g.
-```shell
+```sh
 cd arrays_and_strings/examples/bubble_sort
 ```
 
+Configure
+```sh
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
+```
+
 Build
-```shell
-cmake -S . -B build
+```sh
 cmake --build build
 ```
 
 Run
-```shell
+```sh
 build/BubbleSort 20 4 56 1 18
 ```
 
 For each solution you can run the executable with no arguments to get a description of what parameters are expected:
 
-```shell
+```sh
 $ build/BubbleSort                                                                                                                                                                                             15:52:01
 Specify a list of integers e.g.:
 
