@@ -29,6 +29,10 @@ template <typename T> class Stack {
     bool empty() {
         return this->data.empty();
     }
+
+    void clear() {
+        this->data.clear();
+    }
 };
 
 #endif
