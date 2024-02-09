@@ -8,9 +8,13 @@ template <typename T> class Stack {
 
   public:
     Stack() {}
-    Stack(std::vector<T> vec) { this->data = vec; }
+    Stack(std::vector<T> vec) {
+        this->data = vec;
+    }
 
-    void push(T element) { this->data.push_back(element); }
+    void push(T element) {
+        this->data.push_back(element);
+    }
 
     T pop() {
         T element = this->data.back();
@@ -18,7 +22,13 @@ template <typename T> class Stack {
         return element;
     }
 
-    T read() { return this->data.back(); }
+    T read() {
+        return this->data.back();
+    }
+
+    bool empty() {
+        return this->data.empty();
+    }
 };
 
 #endif
