@@ -25,7 +25,7 @@ class Linter {
                 }
 
                 char poppedOpeningBrace = this->stack.pop();
-                
+
                 if (this->isNotAMatch(poppedOpeningBrace, character)) {
                     std::stringstream().swap(message);
                     message << character << " has mismatched opening brace";
@@ -67,10 +67,10 @@ int main() {
     std::string text3 = "const z = [1, 2, 3";
 
     std::string jsCode = "const x = { y: [1,2,3] };"
-    "const z = x.y.filter((item) => { return item < 3 });"
-    "if (z.length) {"
-    "   console.log({ z });"
-    "}";
+                         "const z = x.y.filter((item) => { return item < 3 });"
+                         "if (z.length) {"
+                         "   console.log({ z });"
+                         "}";
 
     std::cout << linter.lint(text1) << std::endl;
     std::cout << linter.lint(text2) << std::endl;
